@@ -5,8 +5,9 @@
 # include <algorithm>
 # include <exception>
 # include <stdexcept>
+# include <vector>
 
-class ImpossibleToFind : public exception
+class ImpossibleToFind : public std::exception
 {
 	public:
 		const char *what() const throw()
@@ -16,7 +17,7 @@ class ImpossibleToFind : public exception
 };
 
 template<typename T>
-void	easyfind(std::vector<T> &cont, int n);
+T	easyfind(std::vector<T> &cont, int n);
 
 # include "easyfind.tpp"
 

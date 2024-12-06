@@ -3,7 +3,7 @@ INCLUDE = ./include
 
 file = $(addprefix $(SRC), main.cpp)
 
-NAME =  easyfind
+NAME =  span
 
 cc = c++
 flag = -Wall -Wextra -Werror -std=c++98 -g
